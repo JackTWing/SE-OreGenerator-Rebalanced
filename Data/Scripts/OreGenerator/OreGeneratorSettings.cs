@@ -39,6 +39,11 @@ namespace Stollie.OreGenerator
                     //Log.Info("Found: " + ore);
                     oreNamesAndAmountsDict[ore] = 10;
                 }
+                if (ore.ToLower().Contains("ice"))
+                {
+                    //Log.Info("Found: Ice");
+                    oreNamesAndAmountsDict[ore] = 100;
+                }
             }
         }
 
